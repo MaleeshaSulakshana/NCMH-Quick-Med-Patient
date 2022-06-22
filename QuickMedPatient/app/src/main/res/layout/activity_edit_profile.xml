@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EditProfileActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="Account"
+                android:textColor="@color/gray2"
+                android:textSize="30dp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_background"
+                android:shadowColor="@color/gray2"
+                android:textColor="@color/gray2"
+                android:hint="First Name"
+                android:textColorHint="@color/gray2"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_background"
+                android:shadowColor="@color/gray2"
+                android:textColor="@color/gray2"
+                android:hint="Last Name"
+                android:textColorHint="@color/gray2"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_background"
+                android:shadowColor="@color/gray2"
+                android:textColor="@color/gray2"
+                android:hint="Email"
+                android:textColorHint="@color/gray2"
+                android:inputType="textEmailAddress"
+                app:passwordToggleEnabled="true"/>
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_background"
+                android:shadowColor="@color/gray2"
+                android:textColor="@color/gray2"
+                android:hint="DOB"
+                android:textColorHint="@color/gray2"
+                android:inputType="text"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/genderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMale"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="true"
+                    app:checkedIconEnabled="true"
+                    app:checkedIconTint="@color/black"
+                    app:chipBackgroundColor="@color/white"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFemale"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="true"
+                    app:checkedIconEnabled="true"
+                    app:checkedIconTint="@color/black"
+                    app:chipBackgroundColor="@color/white"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_background"
+                android:text="Update"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"/>
+
+
+</LinearLayout>
